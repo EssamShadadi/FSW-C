@@ -1,0 +1,11 @@
+run the website:
+
+
+pip install -r .\requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py loaddata tickets\fixtures\centers_fixture.json
+python manage.py loaddata tickets\fixtures\employees_fixture.json
+
+python manage.py runserver
